@@ -23,7 +23,7 @@ class Embed {
         if (this.description && this.description.length > 2048) throw new Error('The description should not be longer than 265 characters.');
         if (this.color && (this.color < 0 || this.color > 0xFFFFFF)) throw new Error('Color must be a valid HEX-Color for HTML or be an integer within 0 - 16777215');
         if (this.color && isNaN(this.color)) throw new Error('Could not convert color to number.');
-        if (this.footer.text.length > 2048) throw new Error('A footer may not be longer than 2048 characters');
+        if (this.footer && this.footer.text.length > 2048) throw new Error('A footer may not be longer than 2048 characters');
         if (this.fields.length >= 25) throw new Error('You cannot add more than 25 fields.');
         for (let f of this.fields) {
             if (f.name.length > 256) throw new Error('A field name may not be longer than 256 characters.');

@@ -8,17 +8,20 @@ class ErisEmbed extends Embed {
         super(data);
     }
 
-    send(sender, {content, channelID}) {
-        if (!sender && this.sender) sender = this.sender;
-        if (!channelID && this.channelID) channelID = this.channelID;
+    send(sender, channelID) {
+        if (!sender) {
+            if (this.sender) sender = this.sender;
+            else throw  new Error('Sender for embed could not be found.');
+        }
 
-        if (content) {
-            if (typeof content === 'object') content.embed = this.sendable;
-            else content = {content, embed: this.sendable};
-        } else content = {embed: this.sendable};
+        if (!channelID && sender instanceof Eris.Client) {
+            if (this.channelID) channelID = this.channelID;
+            else throw new Error('ChannelID could not be found');
+        }
 
-        if (sender instanceof Eris.Client) return sender.createMessage(channelID, content);
-        else if (sender instanceof Eris.Channel) return sender.createMessage(content);
+
+        if (sender instanceof Eris.Client) return sender.createMessage(channelID, {embed: this.sendable});
+        else if (sender instanceof Eris.Channel) return sender.createMessage({embed: this.sendable});
     }
 }
 
