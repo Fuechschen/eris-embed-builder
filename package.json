@@ -1,0 +1,10 @@
+{
+  "name": "eris-embed-builder",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "eris": "^0.5.1"
+  },
+  "main": "index.js",
+  "author": "Fuechschen <johannes@diehl.io> (https://fuechschen.org)",
+  "files": ["index.js", "Embed.js", "ErisEmbed.js"]
+}
