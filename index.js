@@ -1,6 +1,6 @@
 try {
     let Eris = require('eris'),
-        Embed = require('./ErisEmbed');
+        Embed = require('./lib/ErisEmbedBuilder');
 
     Eris.Client.prototype.createEmbed = function (channelID, data) {
         return new Embed(data, this, channelID);
@@ -10,6 +10,6 @@ try {
         return new Embed(data, this);
     };
 } catch (err) {
-    module.exports = require('./Embed');
+    module.exports = require('./lib/EmbedBuilder');
 }
 
