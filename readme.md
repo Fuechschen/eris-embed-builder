@@ -1,5 +1,7 @@
 # eris-embed-builder
 
+[![NPM version](https://img.shields.io/npm/v/eris-embed-builder.svg?style=flat-square)](https://npmjs.com/package/eris-embed-builder) [![npm](https://img.shields.io/npm/l/eris-embed-builder.svg?style=flat-square)]() [![npm](https://img.shields.io/npm/dm/twitch-reailtime.svg?style=flat-square)]() [![dependencies Status](https://david-dm.org/Fuechschen/eris-embed-builder/status.svg?style=flat-square)](https://david-dm.org/Fuechschen/eris-embed-builder) [![Build Status](https://img.shields.io/travis/Fuechschen/eris-embed-builder/master.svg?style=flat-square)](https://github.com/Fuechschen/eris-embed-builder)
+
 eris-embed-builder is a small library for creating RichEmbeds on [Discord](https://discordapp.com). It's desinged to extend [Eris](https://abal.moe/Eris), however it will work with every node-js library you can imagine.
 
 ### Installation
