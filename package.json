@@ -52,7 +52,7 @@
       ],
       "no-control-regex": 0,
       "global-require": 1,
-      "camelcase": 1,
+      "camelcase": 0,
       "dot-notation": 1,
       "no-else-return": 2,
       "no-plusplus": 2,

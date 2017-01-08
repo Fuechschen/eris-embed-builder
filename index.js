@@ -1,6 +1,6 @@
 try {
-    let Eris = require('eris'),
-        Embed = require('./lib/ErisEmbedBuilder');
+    let Eris = require('eris'), //eslint-disable-line global-require
+        Embed = require('./lib/ErisEmbedBuilder');  //eslint-disable-line global-require
 
     Eris.Client.prototype.createEmbed = function (channelID, data) {
         return new Embed(data, this, channelID);
@@ -10,6 +10,6 @@ try {
         return new Embed(data, this);
     };
 } catch (err) {
-    module.exports = require('./lib/EmbedBuilder');
+    module.exports = require('./lib/EmbedBuilder');  //eslint-disable-line global-require
 }
 
