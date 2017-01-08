@@ -3,9 +3,9 @@ let Eris = require('eris'),
 
 class ErisEmbed extends Embed {
     constructor(data, sender, channelID) {
+        super(data);
         this.sender = sender;
         this.channelID = channelID;
-        super(data);
     }
 
     send(sender, channelID) {
