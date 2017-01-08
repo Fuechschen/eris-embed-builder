@@ -19,7 +19,7 @@
   "scripts": {
     "docs": "jsdoc -c jsdoc.conf.json",
     "docs:md": "jsdoc2md \"lib/**/*.js\" > api.md",
-    "test": "eslint"
+    "test": "eslint \"**/*.js\""
   },
   "devDependencies": {
     "eslint": "^3.13.0",
