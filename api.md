@@ -21,6 +21,7 @@
     * [.setColor(color)](#EmbedBuilder+setColor) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
     * [.setAuthor(name, [icon_url], [url])](#EmbedBuilder+setAuthor) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
     * [.setTimestamp(timestamp)](#EmbedBuilder+setTimestamp) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
+    * [.addField(name, value, inline)](#EmbedBuilder+addField) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
     * [.setThumbnail(url, [options])](#EmbedBuilder+setThumbnail) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
     * [.setImage(url, [options])](#EmbedBuilder+setImage) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
     * [.setFooter(text, [icon_url])](#EmbedBuilder+setFooter) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
@@ -103,6 +104,19 @@ SEt the timestamp of the embed.
 | Param | Type |
 | --- | --- |
 | timestamp | <code>Date</code> | 
+
+<a name="EmbedBuilder+addField"></a>
+
+### embedBuilder.addField(name, value, inline) ⇒ <code>[EmbedBuilder](#EmbedBuilder)</code>
+Add a field to an embed.
+
+**Kind**: instance method of <code>[EmbedBuilder](#EmbedBuilder)</code>  
+
+| Param | Type | Default |
+| --- | --- | --- |
+| name | <code>String</code> |  | 
+| value | <code>String</code> |  | 
+| inline | <code>Boolean</code> | <code>false</code> | 
 
 <a name="EmbedBuilder+setThumbnail"></a>
 
