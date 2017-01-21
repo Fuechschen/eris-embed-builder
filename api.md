@@ -193,8 +193,8 @@ Used to finally send the embed.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| [sender] | <code>Object</code> | Either a Client or a Channel which should be used tosend the embed. |
-| [channelID] | <code>String</code> | When the sender is a client, this is used to specify the channel the embed should be sent to. |
+| [sender] | <code>Object</code> | Either a Client or a Channel which should be used to send the embed. This is only necessary if the builder wasn't created with [eris].createEmbed or [channel].createEmbed |
+| [channelID] | <code>String</code> | When the sender is a client, this is used to specify the channel the embed should be sent to. This is only necessary if the builder wasn't created with [channel].createEmbed |
 
 <a name="EmbedBuilder+title"></a>
 
