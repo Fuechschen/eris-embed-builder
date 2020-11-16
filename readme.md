@@ -6,11 +6,25 @@ eris-embed-builder is a small library for creating RichEmbeds on [Discord](https
 
 ### Installation
 
-`npm i -S eris-embed-builder`
+```js
+npm i -S eris-embed-builder
+```
 
 ### Usage
 
-If you are using Eris, it's as easy as it can get. Just put `require('eris-embed-builder)` somewhere in your code before you create your client (`new Eris()` or `new Eris.CommandClient()`).
+If you are using Eris, it's as easy as it can get. Just put
+```js
+require("eris-embed-builder"))
+```
+somewhere in your code before you create your client 
+```js
+new Eris())
+```
+or
+```js
+new Eris.CommandClient()`
+```
+
 This will expose a new method on every channel (`channel.createEmbed()`) and the client (`client.createEmbed(channelID)`). These Methods will return a new EmbedBuilder on which you can insert your data. To finally send the embed, call `.send()` on the EmbedBuilder.
 You can find the full API-documentation [here](api.md).
 
